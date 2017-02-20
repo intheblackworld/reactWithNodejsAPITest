@@ -4,16 +4,15 @@ import 'whatwg-fetch'
 export default class Confirm extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-
-    }
   }
-  sendConfirmPost () {
 
-    fetch('http://nodejs-express-practice2.herokuapp.com/newapi/members/confirm', {
+  sendConfirmPost = (event) => {
+    event.preventDefault()
+    console.log(this.state)
+    fetch('http://nodejs-express-practice2.herokuapp.com/newapi2/members2', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'text/plain'
       },
       body: JSON.stringify({
         email: this.props.location.query.email,

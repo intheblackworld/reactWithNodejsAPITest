@@ -16,6 +16,8 @@ class App extends Component {
             <li><Link to='/article'>article</Link></li>
             <li><Link to='/form'>form</Link></li>
             <li><Link to='/confirm'>認證頁</Link></li>
+            <li><Link to='/image'>圖片</Link></li>
+            <li><Link to='/image/animal'>圖片</Link></li>
           </ul>
 
         { this.props.children }

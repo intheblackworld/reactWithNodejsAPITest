@@ -20,8 +20,7 @@ export default class Form extends Component {
 
   signUp = (event) => {
     event.preventDefault()
-
-    fetch('http://nodejs-express-practice2.herokuapp.com/newapi/members', {
+    fetch('https://nodejs-express-practice2.herokuapp.com/newapi/members/members', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
