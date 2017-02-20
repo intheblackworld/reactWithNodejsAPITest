@@ -8,11 +8,10 @@ export default class Confirm extends React.Component {
 
   sendConfirmPost = (event) => {
     event.preventDefault()
-    console.log(this.state)
     fetch('http://nodejs-express-practice2.herokuapp.com/newapi2/members2', {
       method: 'POST',
       headers: {
-        'Content-Type': 'text/plain'
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         email: this.props.location.query.email,
